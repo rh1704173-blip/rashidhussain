@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RashidMayyari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f4f4f4;
+            text-align: left;
+        }
+      
+        .about {
+            text-align: left;
+            
+        }
+        .container:hover {
+            background-color: gray;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: left;
+        }
+        nav {
+            background: #444;
+            padding: 10px 0;
+            text-align: left;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: left;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        img.profile {
+            
+            border-radius: 90%;
+;
+            height: 0%;
+            width: 12%;
+        }
+        /* Skills section */
+        .skills-section {
+            margin: 30px 0;
+        }
+        .skill {
+            margin-bottom: 18px;
+        }
+        .skill-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .skill-bar-bg {
+            background: #e0e0e0;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 22px;
+        }
+        .skill-bar {
+            height: 22px;
+            line-height: 22px;
+            color: #fff;
+            font-size: 14px;
+            padding-left: 12px;
+            border-radius: 20px;
+            transition: width 0.7s;
+            background: #2965f1 !important; /* All skill bars blue */
+            color: #fff !important;
+        }
+        .html, .css, .js, .react, .python {
+            background: #2965f1 !important;
+            color: #fff !important;
+        }
+        /* Testimonials */
+        .testimonial {
+            background: #f9f9f9;
+            border-left: 5px solid #2965f1;
+           
+            padding: 18px 24px;
+            border-radius: 6px;
+        }
+        .testimonial .stars {
+            color: #ffc107;
+            font-size: 18px;
+            margin-bottom: 6px;
+            display: inline-block;
+            text-align: left;
+        }
+        .testimonial strong {
+    
+            display: flex;
+            align-content: flex-end;
+            margin-top: 8px;
+           padding: -4%;
+        }
+        button:hover{
+            background-color: chartreuse;
+        }
+        /* Social icons */
+        .social-icons {
+            
+            margin-bottom: 10px;
+        
+        }
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #fff;
+            font-size: 26px;
+            vertical-align: middle;
+            transition: color 0.2s;
+        }
+        .social-icons a:hover {
+            color: #2965f1;
+        }
+        .header {
+            background-image: url('pic1.jpg');
+            background-size: cover;
+            background-position: center;
+
+        }
+       
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/pic1" href="pic.jpg">
+    <!-- Font Awesome CDN for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap-reboot.min.css">
+</head>
+<body>
+   <header>
+    <div class="header">
+    <div class="social-icons" style="margin-left: 20%; padding: 0%;">
+        <a href="https://wa.me/message/6J5MVCYQPENSL1" target="_blank" title="WhatsApp" style="color: #25D366;">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.facebook.com/share/p/1Fj5B3nw4e/" target="_blank" title="Facebook" style="color: #1877F3; margin-left: 20%;">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.tiktok.com/@codewithme15?_t=ZS-9068WMvnbHE&_r=1" target="_blank" title="TikTok" style="color: #000000; margin-left: 20%;">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.instagram.com/rashidhussain5277?igsh=YzljYTk1ODg3Zg==" target="_blank" title="Instagram" style="color: #E4405F; margin-left: 20%;">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://services.zangi.com/dl/conversation/1290702924" target="_blank" title="Zangi" style="color: #1C7DF2; margin-left: 20%;">
+            <!-- Zangi does not have an official Font Awesome icon, so using a generic comment icon as a placeholder -->
+            <i class="fas fa-comment-dots"></i>
+        </a>
+    </div></div>
+        <img src="ChatGPT Image Sep 29, 2025, 11_21_59 AM.png" alt="Profile Photo" class="profile">
+        <h1>Rashid Hussain</h1>
+        <p>Web Developer | Designer | Programmer</p>
+       
+        <a href="https://wa.me/message/6J5MVCYQPENSL1" target="_blank">
+            <button type="button">Hire me</button>
+        </a>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">services</a>
+        <a href="#testimonial">Client Testimonials</a>
+        </div>
+    </nav>
+    <div class="container" style="text-align: left;">
+        <section id="about" class="about about-hover">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm a passionate web developer with experience in building modern and responsive websites. I enjoy solving problems and learning new technologies.
+            </p>
+        </section>
+    </div>
+        </section>
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skill">
+               
+                <div class="skill-bar-bg">
+                    <div class="skill-bar html" style="width: 0;"> <span class="skill-label">HTML <span class="skill-percent">95%</span></span></div>
+                </div>
+            </div>
+            <div class="skill">
+               
+                <div class="skill-bar-bg">
+                    <div class="skill-bar css" style="width: 0;"> <span class="skill-label">CSS <span class="skill-percent">90%</span></span></div>
+                </div>
+            </div>
+            <div class="skill">
+               
+                <div class="skill-bar-bg">
+                    <div class="skill-bar js" style="width: 0;"> <span class="skill-label">JavaScript <span class="skill-percent">85%</span></span></div>
+                </div>
+            </div>
+            <div class="skill">
+                
+                <div class="skill-bar-bg">
+                    <div class="skill-bar react" style="width: 0;"><span class="skill-label">React <span class="skill-percent">75%</span></span></div>
+                </div>
+            </div>
+            <div class="skill">
+                
+                <div class="skill-bar-bg">
+                    <div class="skill-bar python" style="width: 0;"><span class="skill-label">Python <span class="skill-percent">80%</span></span></div>
+                </div>
+            </div>
+            <style>
+                .skills-section {
+                    margin: 30px 0;
+                }
+                .skill {
+                    margin-bottom: 18px;
+                }
+                .skill-label {
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .skill-percent {
+                    font-weight: normal;
+                    font-size: 15px;
+                    color: #444;
+                }
+                .skill-bar-bg {
+                    background: #e0e0e0;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    height: 22px;
+                }
+                .skill-bar {
+                    height: 22px;
+                    line-height: 22px;
+                    color: #fff;
+                    font-size: 14px;
+                    padding-left: 12px;
+                    border-radius: 20px;
+                    transition: width 0.7s;
+                    min-width: 60px;
+                    white-space: nowrap;
+                    background: #2965f1 !important;
+                }
+                .html { background: #e44d26 !important; }
+                .css { background: #2965f1 !important; }
+                .js { background: #f0db4f !important; color: #222 !important; }
+                .react { background: #61dafb !important; color: #222 !important; }
+                .python { background: #3776ab !important; }
+                @media (max-width: 600px) {
+                    .skills-section {
+                        padding: 0 8px;
+                    }
+                    .skill-label {
+                        font-size: 15px;
+                    }
+                    .skill-bar {
+                        font-size: 12px;
+                        padding-left: 8px;
+                    }
+                }
+            </style>
+            <script>
+                // Remove initial animation on page load
+                document.addEventListener("DOMContentLoaded", function() {
+                    const bars = document.querySelectorAll('.skill-bar');
+                    bars.forEach(bar => bar.style.width = "0");
+                });
+
+                // Animate bars on hover
+                document.querySelector('.skills-section').addEventListener('mouseenter', function() {
+                    const skills = [
+                        { selector: ".html", width: "95%" },
+                        { selector: ".css", width: "90%" },
+                        { selector: ".js", width: "85%" },
+                        { selector: ".react", width: "75%" },
+                        { selector: ".python", width: "80%" }
+                    ];
+                    skills.forEach(skill => {
+                        const el = document.querySelector(skill.selector);
+                        if (el) {
+                            el.style.width = skill.width;
+                        }
+                    });
+                });
+
+                // Reset bars on mouse leave
+                document.querySelector('.skills-section').addEventListener('mouseleave', function() {
+                    const bars = document.querySelectorAll('.skill-bar');
+                    bars.forEach(bar => bar.style.width = "0");
+                });
+            </script>
+        </section>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const skills = [
+                { selector: ".html", width: "95%" },
+                { selector: ".css", width: "90%" },
+                { selector: ".js", width: "85%" },
+                { selector: ".react", width: "75%" },
+                { selector: ".python", width: "80%" }
+            ];
+            skills.forEach(skill => {
+                const el = document.querySelector(skill.selector);
+                if (el) {
+                    setTimeout(() => {
+                        el.style.width = skill.width;
+                    }, 400);
+                }
+            });
+        });
+        </script>
+        <section id="services">
+           <h2>services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Web Disgn</h3>
+                    <p> -Responsive disgn <br>-SEO optimization<br>-logo/images/content<br>- Testing and Quality Assurance</p>
+                   
+                </div>
+                <div class="service">
+                    <h3>WEb Development</h3>
+                  <p>-Clone Website with Content<br>
+
+-Coding Website with Content<br>
+
+-Static Website with Content</p>
+                    
+                </div>
+                <div class="service">
+                    <h3>Ecommerce</h3>
+                    <p>-Manage Categories/Products<br>
+
+-Manage Order/AddtoCart<br>
+
+-Payment Integration<br>
+
+-Report</p>
+                    
+                </div>
+            </div>
+            <style>
+                .service:hover {
+                    /* No color change, but you can add other effects if needed */
+                    box-shadow: 0 4px 16px rgba(41, 101, 241, 0.12);
+                    transform: translateY(-4px) scale(1.02);
+                    transition: box-shadow 0.3s, transform 0.3s;
+                }
+            </style>
+        </section>
+
+      <section id="testimonial">
+        
+        <div class="row bg-success ">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial col-4">
+             
+                <img src="Screenshot 2025-09-29 110225.png" alt="Profile Photo" class="profile">
+                 <strong>-Maryam </strong>
+                  <blockquote>
+                    "Rashid delivered our service on time and exceeded our expectations. Highly recommended!"<br>
+                
+                 <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></blockquote>
+            </div>
+            <div class="testimonial col-4">
+                
+                
+                <img src="m.jpg" alt="Profile Photo" class="profile">
+                <strong>- Manzoor Hussain</strong>
+                 <blockquote>
+                    "Professional, creative, and reliable. Will work with Rashid again!"
+                </blockquote>
+               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div> </blockquote>
+            </div>
+            <div class="testimonial col-4">
+               
+               
+               
+                 <img src="happy-bearded-young-man.jpg" alt="Profile Photo" class="profile1">
+                   <strong>- Geralt</strong>
+                  <blockquote>
+                    "Excellent communication and top-notch skills. The website looks amazing!"
+                
+               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></blockquote>
+               
+            </div>   
+        </section>
+       
+    <!-- Contact Me Card (floating button, opens on hover) -->
+    <div class="contact-card-container">
+        <button class="contact-card-trigger" title="Contact Me">&#9993;</button>
+        <div class="contact-card">
+            <h3>Contact Me</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="3" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+  
+    <!-- Contact Me Card (hidden by default, shows on hover) -->
+    <style>
+        .contact-card-container {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 999;
+        }
+        .contact-card-trigger {
+            background: #2965f1;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        .contact-card-trigger:hover {
+            background: #003c8c;
+        }
+        .contact-card {
+            display: none;
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            width: 320px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(41,101,241,0.18);
+            padding: 24px 20px 18px 20px;
+            text-align: left;
+            animation: fadeIn 0.3s;
+        }
+        .contact-card-container:hover .contact-card {
+            display: block;
+        }
+        .contact-card h3 {
+            margin-top: 0;
+            color: #2965f1;
+            margin-bottom: 12px;
+        }
+        .contact-card input,
+        .contact-card textarea {
+            width: 100%;
+            margin-bottom: 12px;
+            padding: 8px 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 15px;
+            font-family: inherit;
+            resize: none;
+        }
+        .contact-card button {
+            background: #2965f1;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-card button:hover {
+            background: #003c8c;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+    </style>
+    <div class="contact-card-container">
+        <button class="contact-card-trigger" title="Contact Me">&#9993;</button>
+        <div class="contact-card">
+            <h3>Contact Me</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="3" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+
+
+<!-- Image Slider Start -->
+<style>
+.slider-container {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(41,101,241,0.10);
+    background: #fff;
+}
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+.slider-images img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0;
+    flex-shrink: 0;
+}
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(41,101,241,0.8);
+    color: #fff;
+    border: none;
+    font-size: 32px;
+    padding: 8px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s;
+}
+.slider-arrow:hover {
+    background: #003c8c;
+}
+.slider-arrow.left {
+    left: 16px;
+}
+.slider-arrow.right {
+    right: 16px;
+}
+.slider-dots {
+    text-align: center;
+    margin: 12px 0 8px 0;
+}
+.slider-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.slider-dot.active {
+    background: #2965f1;
+}
+@media (max-width: 900px) {
+    .slider-container { max-width: 98vw; }
+    .slider-images img { height: 200px; }
+}
+</style>
+<div class="slider-container">
+    <button class="slider-arrow left">&#8592;</button>
+    <div class="slider-images">
+        <img src="i.jpg" alt="Slide 1">
+        <img src="icon.jpeg" alt="Slide 2">
+        <img src="polar.jpg" alt="Slide 3">
+        <img src="mm.jpg" alt="Slide 4">
+        <img src="m.jpg" alt="Slide 5">
+        <img src="pic.jpg" alt="Slide 6">
+        <img src="mypic.jpg" alt="Slide 7">
+    </div>
+    <button class="slider-arrow right">&#8594;</button>
+    <div class="slider-dots"></div>
+</div>
+<script>
+const sliderImages = document.querySelector('.slider-images');
+const images = document.querySelectorAll('.slider-images img');
+const leftArrow = document.querySelector('.slider-arrow.left');
+const rightArrow = document.querySelector('.slider-arrow.right');
+const dotsContainer = document.querySelector('.slider-dots');
+let currentIndex = 0;
+const total = images.length;
+
+// Create dots
+for (let i = 0; i < total; i++) {
+    const dot = document.createElement('span');
+    dot.classList.add('slider-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(i));
+    dotsContainer.appendChild(dot);
+}
+const dots = document.querySelectorAll('.slider-dot');
+
+function updateSlider() {
+    sliderImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+    dots.forEach((dot, idx) => dot.classList.toggle('active', idx === currentIndex));
+}
+function goToSlide(idx) {
+    currentIndex = idx;
+    updateSlider();
+}
+leftArrow.onclick = () => {
+    currentIndex = (currentIndex - 1 + total) % total;
+    updateSlider();
+};
+rightArrow.onclick = () => {
+    currentIndex = (currentIndex + 1) % total;
+    updateSlider();
+};
+// Optional: Auto-slide every 5 seconds
+// setInterval(() => { rightArrow.onclick(); }, 5000);
+</script>
+<!-- Image Slider End -->
+
+<footer style="padding-top: 1%; margin-top: 1%;">
+    &copy; 2024<br> Rashid Hussain Mayyari<br>rashidhussain@gmail.com<br> +923554177430<br>tik tok &nbsp; @rashidhussainmayari
+    <br>. All rights reserved.
+      <div class="social-icons" style="margin-left: 20%; padding: 0%;">
+    <a href="https://wa.link/lq6orf" target="_blank" title="WhatsApp" style="color: #25D366;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.facebook.com/share/p/1Fj5B3nw4e/" target="_blank" title="Facebook" style="color: #1877F3; margin-left: 20%;">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.tiktok.com/@codewithme15?_t=ZS-9068WMvnbHE&_r=1" target="_blank" title="TikTok" style="color: #000000; margin-left: 20%;">
+        <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.instagram.com/rashidhussain5277?igsh=YzljYTk1ODg3Zg==" target="_blank" title="Instagram" style="color: #E4405F; margin-left: 20%;">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://services.zangi.com/dl/conversation/1290702924" target="_blank" title="Zangi" style="color: #1C7DF2; margin-left: 20%;">
+        <!-- Zangi does not have an official Font Awesome icon, so using a generic comment icon as a placeholder -->
+        <i class="fas fa-comment-dots"></i>
+    </a>
+</div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
