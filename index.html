@@ -592,59 +592,8 @@
     .slider-images img { height: 200px; }
 }
 </style>
-<div class="slider-container">
-    <button class="slider-arrow left">&#8592;</button>
-    <div class="slider-images">
-        <img src="i.jpg" alt="Slide 1">
-        <img src="icon.jpeg" alt="Slide 2">
-        <img src="polar.jpg" alt="Slide 3">
-        <img src="mm.jpg" alt="Slide 4">
-        <img src="m.jpg" alt="Slide 5">
-        <img src="pic.jpg" alt="Slide 6">
-        <img src="mypic.jpg" alt="Slide 7">
-    </div>
-    <button class="slider-arrow right">&#8594;</button>
-    <div class="slider-dots"></div>
-</div>
-<script>
-const sliderImages = document.querySelector('.slider-images');
-const images = document.querySelectorAll('.slider-images img');
-const leftArrow = document.querySelector('.slider-arrow.left');
-const rightArrow = document.querySelector('.slider-arrow.right');
-const dotsContainer = document.querySelector('.slider-dots');
-let currentIndex = 0;
-const total = images.length;
 
-// Create dots
-for (let i = 0; i < total; i++) {
-    const dot = document.createElement('span');
-    dot.classList.add('slider-dot');
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goToSlide(i));
-    dotsContainer.appendChild(dot);
-}
-const dots = document.querySelectorAll('.slider-dot');
-
-function updateSlider() {
-    sliderImages.style.transform = `translateX(-${currentIndex * 100}%)`;
-    dots.forEach((dot, idx) => dot.classList.toggle('active', idx === currentIndex));
-}
-function goToSlide(idx) {
-    currentIndex = idx;
-    updateSlider();
-}
-leftArrow.onclick = () => {
-    currentIndex = (currentIndex - 1 + total) % total;
-    updateSlider();
-};
-rightArrow.onclick = () => {
-    currentIndex = (currentIndex + 1) % total;
-    updateSlider();
-};
-// Optional: Auto-slide every 5 seconds
-// setInterval(() => { rightArrow.onclick(); }, 5000);
-</script>
-<!-- Image Slider End -->
+   
 
 <footer style="padding-top: 1%; margin-top: 1%;">
     &copy; 2024 Rashid Hussain Mayyari<br>rashidhussain@gmail.com<br> +923554177430tik tok &nbsp; @rashidhussainmayari
@@ -670,6 +619,7 @@ rightArrow.onclick = () => {
 </footer>
 </body>
 </html>
+
 
 
 
